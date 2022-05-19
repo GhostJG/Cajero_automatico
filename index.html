@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body background="./fondos-blancos-mejores-fondos-de-pantalla.-fondo-para-computadora-blancos-350x219.jpg">
+    <form action="">
+        <h1>Bienvenido Admin</h1>
+        <label for="" class="">Usuario</label>
+        <input type="text" name="u" id="">
+        <label for="" class="">Password</label>
+        <input type="password" name="c" id="">
+        <input type="button" value="Ingresar" onclick="login(this.form)">
+    </form>
+    <script>
+        function login(form){
+            if (form.u.value=="Arianna") {
+                if (form.c.value=="polux") {
+                    location="principal.html";
+                } else {
+                    alert("error de password");
+                }
+            } else {
+                alert("error de usuario");
+            }
+        }
+    </script>
+</body>
+</html>
